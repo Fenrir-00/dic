@@ -44,8 +44,8 @@ for letra in palabra:
 print(f"{color.fin}")
 
 lista = ["apache-user-enum-1.0.txt.gz","apache-user-enum-2.0.txt.gz","big.txt.gz","catala.txt.gz","common.txt.gz","directory-list-1.0.txt.gz","directory-list-2.3-medium.txt.gz","directory-list-2.3-small.txt.gz","directory-list-lowercase-2.3-medium.txt.gz","directory-list-lowercase-2.3-small.txt.gz","euskera.txt.gz","extensions_common.txt.gz","indexes.txt.gz","mutations_common.txt.gz","small.txt.gz","spanish.txt.gz"]
-#for i in lista:
-# os.system(f'gunzip {i}')
+for i in lista:
+os.system(f'gunzip {i}')
 print(f"{color.azul}[✓] DESCOMPRESION FINALIZADA")
 print(f"{color.verde}")
 palabra = "DESCARGANDO ROCKYOU.TXT"
@@ -60,3 +60,4 @@ banner()
 version()
 print(f"{color.azul}[✓] DESCOMPRESION FINALIZADA")
 print(f"{color.azul}[✓] DESCARGA  FINALIZADA")
+os.system("rm descomprimir.py")
